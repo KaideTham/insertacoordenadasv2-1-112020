@@ -7,10 +7,10 @@ require './conecta.php';
 $lati = $_GET["latitud"];
 $long = $_GET["longitud"];
 
-$sql = "INSERT INTO coordenadas (lat, lon)
+$sql = "INSERT INTO desacato (latitud, longitud)
 VALUES ('".$lati. "','".$long."');";
 
-/* insert.php?&latitud=23&longitud=76 */
+/* insert.php?latitud=23&longitud=76 */
 
 echo $sql;
 
